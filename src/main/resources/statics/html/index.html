@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人们点评 - 发现身边的好店</title>
+    <link rel="stylesheet" href="../css/dianping.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="city-wrapper">
+            <div class="city-select">
+                <span class="current-city">北京</span>
+                <span>▼</span>
+            </div>
+            <div class="city-dropdown">
+                <div class="city-item" data-city="北京">北京</div>
+                <div class="city-item" data-city="上海">上海</div>
+                <div class="city-item" data-city="广州">广州</div>
+                <div class="city-item" data-city="深圳">深圳</div>
+                <div class="city-item" data-city="成都">成都</div>
+                <div class="city-item" data-city="杭州">杭州</div>
+            </div>
+        </div>
+        <div class="logo">人们点评</div>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="搜索商家、品类、关键词">
+            <button class="search-btn">搜索</button>
+        </div>
+        <div class="nav-items">
+            <div class="nav-item">登录</div>
+            <div class="nav-item">注册</div>
+            <div class="nav-item">我的</div>
+        </div>
+    </div>
+</header>
+
+<nav class="category-nav">
+    <div class="category-list">
+        <div class="category-item" data-category="全部">
+            <div class="category-icon">🏠</div>
+            <div class="category-name">全部</div>
+        </div>
+        <div class="category-item" data-category="美食">
+            <div class="category-icon">🍔</div>
+            <div class="category-name">美食</div>
+        </div>
+        <div class="category-item" data-category="酒店">
+            <div class="category-icon">🏨</div>
+            <div class="category-name">酒店</div>
+        </div>
+        <div class="category-item" data-category="休闲娱乐">
+            <div class="category-icon">🎮</div>
+            <div class="category-name">休闲娱乐</div>
+        </div>
+        <div class="category-item" data-category="丽人">
+            <div class="category-icon">💇</div>
+            <div class="category-name">丽人</div>
+        </div>
+        <div class="category-item" data-category="汽车">
+            <div class="category-icon">🚗</div>
+            <div class="category-name">汽车</div>
+        </div>
+        <div class="category-item" data-category="亲子">
+            <div class="category-icon">👶</div>
+            <div class="category-name">亲子</div>
+        </div>
+        <div class="category-item" data-category="运动健身">
+            <div class="category-icon">🏃</div>
+            <div class="category-name">运动健身</div>
+        </div>
+    </div>
+</nav>
+
+<section class="result-area">
+    <div class="result-title">
+        <span>猜你喜欢</span>
+        <span class="clear-filter" style="display: none;">清除筛选</span>
+    </div>
+    <div class="shop-list" id="shopList"></div>
+    <div class="result-empty" id="emptyTip" style="display: none;">
+        暂无相关商家，换个关键词试试吧～
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-text">人们点评 - 发现身边的好店</div>
+        <div class="footer-text">客服电话：400-123-4567</div>
+        <div class="copyright">© 2026 人们点评 版权所有</div>
+    </div>
+</footer>
+<script src="../js/data.js"></script>
+<script src="../js/simple.js"></script>
+</body>
+</html>
